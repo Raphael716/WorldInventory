@@ -23,11 +23,8 @@ database:
 # saved - player's inventory will be unique to that world
 # custom - player's inventory will be set to custom items see "items" config for example
 worlds:
-  world: "linked"
-  foo: "linked"
-  bar: "saved"
-  baz: "clear"
-  qux: "custom"
+  world: "saved"
+  mine: "custom"
 # custom item definitions for custom inventory type worlds
 # the format should be defined as so:
 # items:
@@ -40,7 +37,7 @@ worlds:
 # enchantments can be one or multiple as so:
 #   protection:1:unbreaking:1...etc...
 items:
-  qux:
+  mine:
     armor:
       - "diamond_helmet:1:custom armor:custom lore:protection:1"
       - "diamond_chestplate:1:custom armor:custom lore:protection:1"

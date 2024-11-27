@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace xBeastMode\WorldInventory;
 use Closure;
-use pocketmine\event\entity\ItemMergeEvent;
 use pocketmine\item\Item;
 use pocketmine\player\Player;
 use pocketmine\plugin\PluginBase;
@@ -292,7 +291,7 @@ class WorldInventory extends PluginBase{
                          * 	nbt_b64?: string
                          * } $item_data
                          */
-                        $item_data = Item::jsonDeserialize($item_data);
+                        $item_data = Item::legacyJsonDeserialize($item_data);
                 });
                 /** @var Item[] $_ */
                 return $_;
